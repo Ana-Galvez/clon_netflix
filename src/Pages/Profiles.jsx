@@ -2,6 +2,7 @@ import avatar1 from "/images/Netflix-avatar.png";
 import avatar2 from "/images/Netflix-avatar2.png";
 import avatar3 from "/images/Netflix-avatar3.png";
 import avatar4 from "/images/Netflix-avatar4.png";
+import { Link } from 'react-router-dom';
 import "../styles/Profiles.css";
 
 const Profiles = () => {
@@ -11,27 +12,27 @@ const Profiles = () => {
         <h1>¿Quién está viendo ahora?</h1>
         <ul className="choose-profile">
           <li >
-            <a href="/home">
+            <Link to="/home">
               <img className="avatar" src={avatar1} alt="" />
-            </a>
+            </Link>
             <p>Mariano</p>
           </li>
           <li >
-            <a href="/home" >
+            <Link to="/home">
               <img className="avatar" src={avatar2} alt="" />
-            </a>
+            </Link>
             <p>Adrián</p>
           </li>
           <li >
-            <a href="/home" >
+            <Link to="/home">
               <img className="avatar" src={avatar3} alt="" />
-            </a>
+            </Link>
             <p>Verónica</p>
           </li>
           <li >
-            <a href="/home">
+            <Link to="/home">
               <img className="avatar" src={avatar4} alt="" />
-            </a>
+            </Link>
             <p>Ana</p>
           </li>
         </ul>
